@@ -1,2 +1,8 @@
-<h1>Users#result</h1>
-<p>Find me in app/views/users/result.html.erb</p>
+<%= @result %>
+
+<p><%= @result.user[0]["home_url"]%></p>
+
+<%= link_to "#{@result.user[0]["name"]}", @result.user[0]["home_url"]%>
+
+
+<!-- "#{@result.get_repo_name(1)}", @result.get_repo_url(1) -->

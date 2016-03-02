@@ -1,6 +1,10 @@
 <h1>Repocat</h1>
 <p>Enter a username to find his or her repository on github:</p>
-<%= form_tag "/users/result" do %>
+
+<p> Show Path: <%= users_search_path %></p>
+<p> Show URL: <%= users_search_url %></p>
+
+<%= form_tag users_result_path do %>
 <%= text_field_tag :username %>
 <%= button_tag "Get User's Repository"%>
 
