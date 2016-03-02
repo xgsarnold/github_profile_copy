@@ -1,2 +1,13 @@
-<h1>Users#search</h1>
-<p>Find me in app/views/users/search.html.erb</p>
+<h1>Repocat</h1>
+<p>Enter a username to find his or her repository on github:</p>
+<%= form_tag "/users/result" do %>
+<%= text_field_tag :username %>
+<%= button_tag "Get User's Repository"%>
+
+<% end %>
+
+<!-- <form method="post" action="search">
+  <p>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="username" name="username"> </input>
+  </p> -->

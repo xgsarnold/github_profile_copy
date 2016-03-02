@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/search'
+  post 'users/search'
 
   post 'users/result'
 
